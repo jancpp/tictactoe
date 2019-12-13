@@ -37,32 +37,31 @@ public class TicTacToeGameMoveHamcrestTest {
     // check id is set after instantiation
     @Test
     public void whenInstantiated_ThenIdIsSet() {
-    	assertThat(move.getId(), is(equalTo(id)));
-    	assertThat(move.getId(), is(id));
     	assertThat(move.getId(), equalTo(id));
     }
 
     // check x is set after instantiation. use junit assertThat
     @Test
     public void whenInstantiated_ThenXIsSet() {
-
+    	org.junit.Assert.assertThat(move.getX(), equalTo(x));
     }
 
     // check y is set after instantiation. use MyHamcrestMatcher.myEqualTo
     @Test
     public void whenInstantiated_ThenYIsSet() {
-
+    	assertThat(move.getY(), MyHamcrestMatcher.myEqualTo(y));
     }
 
     // check player is set after instantiation
     @Test
     public void whenInstantiated_ThenPlayerIsSet() {
-
+    	org.junit.Assert.assertThat(move.getPlayer(), equalTo(player));
     }
 
     // check allowedChars are O and X after instantiation
     @Test
     public void whenInstantiated_ThenAllowedCharsAreOandX() {
-
+    	assertThat(move.getAllowedChars(), containsInAnyOrder('O', 'X'));
+    	assertThat(move.getAllowedChars(), hasSize(2));
     }
 }
