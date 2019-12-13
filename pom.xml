@@ -41,14 +41,12 @@
         <!-- Testing dependencies -->
 
         <!-- JMockit - Mocking framework -->
-        <!--
         <dependency>
             <groupId>org.jmockit</groupId>
             <artifactId>jmockit</artifactId>
             <version>1.9</version>
             <scope>test</scope>
         </dependency>
-        -->
 
         <!-- Junit - Testing framework -->
         <dependency>
