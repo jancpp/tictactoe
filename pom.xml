@@ -67,14 +67,12 @@
         </dependency>
 
         <!-- AssertJ. Testing framework util - fluent, assertions can be concatenated -->
-        <!--
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <version>3.7.0</version>
             <scope>test</scope>
         </dependency>
-        -->
 
         <!-- Mockito - Mocking framework -->
         <!--

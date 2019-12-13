@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.appskc.business.TicTacToeGameMove;
+import static org.assertj.core.api.Java6Assertions.assertThat;
 
 /**
  * Demo for testing framework util AssertJ
@@ -52,6 +53,7 @@ public class TicTacToeGameMoveAssertJTest {
     // check allowedChars are O and X after instantiation
     @Test
     public void whenInstantiated_ThenAllowedCharsAreOandX() {
-
+    	assertThat(move.getAllowedChars()).hasSize(2).contains('X', 'O');
+    	assertThat(move.getAllowedChars()).containsExactly('X', 'O');
     }
 }
